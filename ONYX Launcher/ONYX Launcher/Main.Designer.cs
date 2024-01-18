@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.pnl_blue = new System.Windows.Forms.Panel();
+            this.lbl_underline = new System.Windows.Forms.Label();
             this.btn_settings = new System.Windows.Forms.Button();
             this.btn_news = new System.Windows.Forms.Button();
             this.btn_games = new System.Windows.Forms.Button();
@@ -37,33 +38,33 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_games = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnl_news = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pnl_settings = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pb_hh_logo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_hh_title = new System.Windows.Forms.Label();
-            this.btn_hh_launch = new System.Windows.Forms.Button();
             this.pnl_rd = new System.Windows.Forms.Panel();
-            this.btn_rd_launch = new System.Windows.Forms.Button();
-            this.lbl_rd_title = new System.Windows.Forms.Label();
+            this.btn_launch_rd = new System.Windows.Forms.Button();
             this.pb_rd_logo = new System.Windows.Forms.PictureBox();
+            this.pnl_hh = new System.Windows.Forms.Panel();
+            this.btn_launch_hh = new System.Windows.Forms.Button();
+            this.pb_hh_logo = new System.Windows.Forms.PictureBox();
+            this.pnl_news = new System.Windows.Forms.Panel();
+            this.lbl_news_title = new System.Windows.Forms.Label();
+            this.pnl_news_line = new System.Windows.Forms.Panel();
+            this.pnl_settings = new System.Windows.Forms.Panel();
+            this.pnl_settings_line = new System.Windows.Forms.Panel();
+            this.lbl_settings_title = new System.Windows.Forms.Label();
             this.pnl_blue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_games.SuspendLayout();
-            this.pnl_news.SuspendLayout();
-            this.pnl_settings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_hh_logo)).BeginInit();
-            this.panel1.SuspendLayout();
             this.pnl_rd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_rd_logo)).BeginInit();
+            this.pnl_hh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_hh_logo)).BeginInit();
+            this.pnl_news.SuspendLayout();
+            this.pnl_settings.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_blue
             // 
-            this.pnl_blue.BackColor = System.Drawing.Color.Black;
+            this.pnl_blue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.pnl_blue.Controls.Add(this.lbl_underline);
             this.pnl_blue.Controls.Add(this.btn_settings);
             this.pnl_blue.Controls.Add(this.btn_news);
             this.pnl_blue.Controls.Add(this.btn_games);
@@ -73,6 +74,17 @@
             this.pnl_blue.Name = "pnl_blue";
             this.pnl_blue.Size = new System.Drawing.Size(960, 60);
             this.pnl_blue.TabIndex = 1;
+            // 
+            // lbl_underline
+            // 
+            this.lbl_underline.AutoSize = true;
+            this.lbl_underline.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_underline.ForeColor = System.Drawing.Color.White;
+            this.lbl_underline.Location = new System.Drawing.Point(79, 39);
+            this.lbl_underline.Name = "lbl_underline";
+            this.lbl_underline.Size = new System.Drawing.Size(82, 16);
+            this.lbl_underline.TabIndex = 7;
+            this.lbl_underline.Text = "---------------";
             // 
             // btn_settings
             // 
@@ -158,140 +170,137 @@
             // 
             // pnl_games
             // 
-            this.pnl_games.BackColor = System.Drawing.Color.White;
+            this.pnl_games.BackColor = System.Drawing.Color.Gray;
             this.pnl_games.Controls.Add(this.pnl_rd);
-            this.pnl_games.Controls.Add(this.panel1);
-            this.pnl_games.Controls.Add(this.label1);
+            this.pnl_games.Controls.Add(this.pnl_hh);
             this.pnl_games.Location = new System.Drawing.Point(0, 60);
             this.pnl_games.Name = "pnl_games";
             this.pnl_games.Size = new System.Drawing.Size(960, 480);
             this.pnl_games.TabIndex = 3;
             // 
-            // label1
+            // pnl_rd
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Games";
+            this.pnl_rd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.pnl_rd.Controls.Add(this.btn_launch_rd);
+            this.pnl_rd.Controls.Add(this.pb_rd_logo);
+            this.pnl_rd.Location = new System.Drawing.Point(211, 6);
+            this.pnl_rd.Name = "pnl_rd";
+            this.pnl_rd.Size = new System.Drawing.Size(200, 225);
+            this.pnl_rd.TabIndex = 6;
             // 
-            // pnl_news
+            // btn_launch_rd
             // 
-            this.pnl_news.BackColor = System.Drawing.Color.White;
-            this.pnl_news.Controls.Add(this.label2);
-            this.pnl_news.Location = new System.Drawing.Point(0, 546);
-            this.pnl_news.Name = "pnl_news";
-            this.pnl_news.Size = new System.Drawing.Size(960, 480);
-            this.pnl_news.TabIndex = 4;
+            this.btn_launch_rd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(57)))), ((int)(((byte)(95)))));
+            this.btn_launch_rd.FlatAppearance.BorderSize = 0;
+            this.btn_launch_rd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_launch_rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_launch_rd.ForeColor = System.Drawing.Color.White;
+            this.btn_launch_rd.Location = new System.Drawing.Point(0, 200);
+            this.btn_launch_rd.Name = "btn_launch_rd";
+            this.btn_launch_rd.Size = new System.Drawing.Size(200, 25);
+            this.btn_launch_rd.TabIndex = 5;
+            this.btn_launch_rd.Text = "Launch";
+            this.btn_launch_rd.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // pb_rd_logo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "News";
+            this.pb_rd_logo.Image = global::ONYX_Launcher.Properties.Resources.ragdoll_destroyers_logo;
+            this.pb_rd_logo.Location = new System.Drawing.Point(0, 0);
+            this.pb_rd_logo.Name = "pb_rd_logo";
+            this.pb_rd_logo.Size = new System.Drawing.Size(200, 200);
+            this.pb_rd_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_rd_logo.TabIndex = 2;
+            this.pb_rd_logo.TabStop = false;
             // 
-            // pnl_settings
+            // pnl_hh
             // 
-            this.pnl_settings.BackColor = System.Drawing.Color.White;
-            this.pnl_settings.Controls.Add(this.label3);
-            this.pnl_settings.Location = new System.Drawing.Point(966, 60);
-            this.pnl_settings.Name = "pnl_settings";
-            this.pnl_settings.Size = new System.Drawing.Size(960, 480);
-            this.pnl_settings.TabIndex = 5;
+            this.pnl_hh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.pnl_hh.Controls.Add(this.btn_launch_hh);
+            this.pnl_hh.Controls.Add(this.pb_hh_logo);
+            this.pnl_hh.Location = new System.Drawing.Point(5, 6);
+            this.pnl_hh.Name = "pnl_hh";
+            this.pnl_hh.Size = new System.Drawing.Size(200, 225);
+            this.pnl_hh.TabIndex = 3;
             // 
-            // label3
+            // btn_launch_hh
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Settings";
+            this.btn_launch_hh.BackColor = System.Drawing.Color.Black;
+            this.btn_launch_hh.FlatAppearance.BorderSize = 0;
+            this.btn_launch_hh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_launch_hh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_launch_hh.ForeColor = System.Drawing.Color.White;
+            this.btn_launch_hh.Location = new System.Drawing.Point(0, 200);
+            this.btn_launch_hh.Name = "btn_launch_hh";
+            this.btn_launch_hh.Size = new System.Drawing.Size(200, 25);
+            this.btn_launch_hh.TabIndex = 5;
+            this.btn_launch_hh.Text = "Launch";
+            this.btn_launch_hh.UseVisualStyleBackColor = false;
             // 
             // pb_hh_logo
             // 
             this.pb_hh_logo.Image = global::ONYX_Launcher.Properties.Resources.hell_hotel_logo;
-            this.pb_hh_logo.Location = new System.Drawing.Point(5, 5);
+            this.pb_hh_logo.Location = new System.Drawing.Point(0, 0);
             this.pb_hh_logo.Name = "pb_hh_logo";
             this.pb_hh_logo.Size = new System.Drawing.Size(200, 200);
             this.pb_hh_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_hh_logo.TabIndex = 2;
             this.pb_hh_logo.TabStop = false;
             // 
-            // panel1
+            // pnl_news
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.btn_hh_launch);
-            this.panel1.Controls.Add(this.lbl_hh_title);
-            this.panel1.Controls.Add(this.pb_hh_logo);
-            this.panel1.Location = new System.Drawing.Point(14, 44);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 279);
-            this.panel1.TabIndex = 3;
+            this.pnl_news.BackColor = System.Drawing.Color.Gray;
+            this.pnl_news.Controls.Add(this.pnl_news_line);
+            this.pnl_news.Controls.Add(this.lbl_news_title);
+            this.pnl_news.Location = new System.Drawing.Point(0, 546);
+            this.pnl_news.Name = "pnl_news";
+            this.pnl_news.Size = new System.Drawing.Size(960, 480);
+            this.pnl_news.TabIndex = 4;
             // 
-            // lbl_hh_title
+            // lbl_news_title
             // 
-            this.lbl_hh_title.AutoSize = true;
-            this.lbl_hh_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_hh_title.Location = new System.Drawing.Point(61, 218);
-            this.lbl_hh_title.Name = "lbl_hh_title";
-            this.lbl_hh_title.Size = new System.Drawing.Size(88, 20);
-            this.lbl_hh_title.TabIndex = 4;
-            this.lbl_hh_title.Text = "Hell Hotel";
+            this.lbl_news_title.AutoSize = true;
+            this.lbl_news_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_news_title.Location = new System.Drawing.Point(10, 10);
+            this.lbl_news_title.Name = "lbl_news_title";
+            this.lbl_news_title.Size = new System.Drawing.Size(99, 31);
+            this.lbl_news_title.TabIndex = 0;
+            this.lbl_news_title.Text = "NEWS";
             // 
-            // btn_hh_launch
+            // pnl_news_line
             // 
-            this.btn_hh_launch.Location = new System.Drawing.Point(10, 245);
-            this.btn_hh_launch.Name = "btn_hh_launch";
-            this.btn_hh_launch.Size = new System.Drawing.Size(190, 25);
-            this.btn_hh_launch.TabIndex = 5;
-            this.btn_hh_launch.Text = "Launch";
-            this.btn_hh_launch.UseVisualStyleBackColor = true;
+            this.pnl_news_line.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.pnl_news_line.Location = new System.Drawing.Point(10, 48);
+            this.pnl_news_line.Name = "pnl_news_line";
+            this.pnl_news_line.Size = new System.Drawing.Size(940, 10);
+            this.pnl_news_line.TabIndex = 5;
             // 
-            // pnl_rd
+            // pnl_settings
             // 
-            this.pnl_rd.BackColor = System.Drawing.Color.Gray;
-            this.pnl_rd.Controls.Add(this.btn_rd_launch);
-            this.pnl_rd.Controls.Add(this.lbl_rd_title);
-            this.pnl_rd.Controls.Add(this.pb_rd_logo);
-            this.pnl_rd.Location = new System.Drawing.Point(230, 44);
-            this.pnl_rd.Name = "pnl_rd";
-            this.pnl_rd.Size = new System.Drawing.Size(210, 279);
-            this.pnl_rd.TabIndex = 6;
+            this.pnl_settings.BackColor = System.Drawing.Color.Gray;
+            this.pnl_settings.Controls.Add(this.pnl_settings_line);
+            this.pnl_settings.Controls.Add(this.lbl_settings_title);
+            this.pnl_settings.Location = new System.Drawing.Point(966, 60);
+            this.pnl_settings.Name = "pnl_settings";
+            this.pnl_settings.Size = new System.Drawing.Size(960, 480);
+            this.pnl_settings.TabIndex = 6;
             // 
-            // btn_rd_launch
+            // pnl_settings_line
             // 
-            this.btn_rd_launch.Location = new System.Drawing.Point(10, 245);
-            this.btn_rd_launch.Name = "btn_rd_launch";
-            this.btn_rd_launch.Size = new System.Drawing.Size(190, 25);
-            this.btn_rd_launch.TabIndex = 5;
-            this.btn_rd_launch.Text = "Launch";
-            this.btn_rd_launch.UseVisualStyleBackColor = true;
+            this.pnl_settings_line.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.pnl_settings_line.Location = new System.Drawing.Point(10, 48);
+            this.pnl_settings_line.Name = "pnl_settings_line";
+            this.pnl_settings_line.Size = new System.Drawing.Size(940, 10);
+            this.pnl_settings_line.TabIndex = 5;
             // 
-            // lbl_rd_title
+            // lbl_settings_title
             // 
-            this.lbl_rd_title.AutoSize = true;
-            this.lbl_rd_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rd_title.Location = new System.Drawing.Point(24, 218);
-            this.lbl_rd_title.Name = "lbl_rd_title";
-            this.lbl_rd_title.Size = new System.Drawing.Size(162, 20);
-            this.lbl_rd_title.TabIndex = 4;
-            this.lbl_rd_title.Text = "Ragdoll Destroyers";
-            // 
-            // pb_rd_logo
-            // 
-            this.pb_rd_logo.Image = global::ONYX_Launcher.Properties.Resources.ragdoll_destroyers_logo;
-            this.pb_rd_logo.Location = new System.Drawing.Point(5, 5);
-            this.pb_rd_logo.Name = "pb_rd_logo";
-            this.pb_rd_logo.Size = new System.Drawing.Size(200, 200);
-            this.pb_rd_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_rd_logo.TabIndex = 2;
-            this.pb_rd_logo.TabStop = false;
+            this.lbl_settings_title.AutoSize = true;
+            this.lbl_settings_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_settings_title.Location = new System.Drawing.Point(10, 10);
+            this.lbl_settings_title.Name = "lbl_settings_title";
+            this.lbl_settings_title.Size = new System.Drawing.Size(159, 31);
+            this.lbl_settings_title.TabIndex = 0;
+            this.lbl_settings_title.Text = "SETTINGS";
             // 
             // Main
             // 
@@ -310,19 +319,17 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.pnl_blue.ResumeLayout(false);
+            this.pnl_blue.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_games.ResumeLayout(false);
-            this.pnl_games.PerformLayout();
+            this.pnl_rd.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_rd_logo)).EndInit();
+            this.pnl_hh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_hh_logo)).EndInit();
             this.pnl_news.ResumeLayout(false);
             this.pnl_news.PerformLayout();
             this.pnl_settings.ResumeLayout(false);
             this.pnl_settings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_hh_logo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.pnl_rd.ResumeLayout(false);
-            this.pnl_rd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_rd_logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -336,18 +343,18 @@
         private System.Windows.Forms.Button btn_settings;
         private System.Windows.Forms.Button btn_news;
         private System.Windows.Forms.Panel pnl_games;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnl_news;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel pnl_settings;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_news_title;
         private System.Windows.Forms.PictureBox pb_hh_logo;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lbl_hh_title;
-        private System.Windows.Forms.Button btn_hh_launch;
+        private System.Windows.Forms.Panel pnl_hh;
+        private System.Windows.Forms.Button btn_launch_hh;
         private System.Windows.Forms.Panel pnl_rd;
-        private System.Windows.Forms.Button btn_rd_launch;
-        private System.Windows.Forms.Label lbl_rd_title;
+        private System.Windows.Forms.Button btn_launch_rd;
         private System.Windows.Forms.PictureBox pb_rd_logo;
+        private System.Windows.Forms.Label lbl_underline;
+        private System.Windows.Forms.Panel pnl_news_line;
+        private System.Windows.Forms.Panel pnl_settings;
+        private System.Windows.Forms.Panel pnl_settings_line;
+        private System.Windows.Forms.Label lbl_settings_title;
     }
 }

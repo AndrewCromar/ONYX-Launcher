@@ -32,33 +32,30 @@ namespace ONYX_Launcher
 
         private void btn_games_Click(object sender, EventArgs e)
         {
-            HideAllPanles();
-            pnl_games.Size = new Size(960, 480);
-            pnl_games.Location = new Point(0, 60);
-            pnl_games.Visible = true;
+            EnabelPage(pnl_games, new Point(79, 39));
+            
         }
 
         private void btn_news_Click(object sender, EventArgs e)
         {
-            HideAllPanles();
-            pnl_news.Size = new Size(960, 480);
-            pnl_news.Location = new Point(0, 60);
-            pnl_news.Visible = true;
+            EnabelPage(pnl_news, new Point(160, 39));
         }
 
         private void btn_settings_Click(object sender, EventArgs e)
         {
-            HideAllPanles();
-            pnl_settings.Size = new Size(960, 480);
-            pnl_settings.Location = new Point(0, 60);
-            pnl_settings.Visible = true;
+            EnabelPage(pnl_settings, new Point(241, 39));
         }
 
-        private void HideAllPanles()
+        private void EnabelPage(Panel pnl, Point underline_location)
         {
             pnl_games.Visible = false;
             pnl_news.Visible = false;
             pnl_settings.Visible = false;
+
+            pnl.Size = new Size(960, 480);
+            pnl.Location = new Point(0, 60);
+            pnl.Visible = true;
+            lbl_underline.Location = underline_location;
         }
 
         private void CenterFormOnScreen()
