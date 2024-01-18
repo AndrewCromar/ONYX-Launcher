@@ -6,7 +6,8 @@ namespace ONYX_Launcher{
     public partial class Startup : Form{
         private float current = 0;
         private float final = 500;
-        private float smoothing = 0.025f;
+        // private float smoothing = 0.025f;
+        private float smoothing = 0.08f;
 
         public Startup(){
             InitializeComponent();

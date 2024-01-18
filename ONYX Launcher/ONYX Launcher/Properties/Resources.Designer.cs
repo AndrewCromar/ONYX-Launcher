@@ -89,5 +89,15 @@ namespace ONYX_Launcher.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ragdoll_destroyers_logo {
+            get {
+                object obj = ResourceManager.GetObject("ragdoll_destroyers_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

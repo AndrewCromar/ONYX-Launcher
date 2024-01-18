@@ -9,3 +9,4 @@ X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launc
 X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.csproj.CoreCompileInputs.cache
 X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.exe
 X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.pdb
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX_Launcher.Main.resources
