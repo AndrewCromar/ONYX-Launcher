@@ -1,4 +1,7 @@
 from customtkinter import *
+from PIL import Image
+
+def AddTab(form, title): form.add(title)
 
 app = CTk()
 app.geometry("1000x800")
@@ -6,32 +9,28 @@ app.title("ONYX Launcher")
 
 set_appearance_mode("dark")
 
-CTkLabel(master=app, text="ONYX Development", width=100, height=50, font=(CTkFont, 20)).place(relx=0.5, rely=0.05, anchor="center")
+hh_logo = Image.open("hell_hotel_logo.png")
+rd_logo = Image.open("ragdoll_destroyers_logo.png")
+d_logo = Image.open("discord_logo.png")
+gh_logo = Image.open("github_logo.png")
 
+title = CTkLabel(app, text="ONYX Game Launcher", font=(CTkFont, 20)).place(relx=0.5, rely=0.05, anchor="center")
 
-tab_view = CTkTabview(master=app, width=750, height=900)
-tab_view.pack(padx=20, pady=75, expand=False)
-tab_view.add("Games")
-tab_view.add("News")
-tab_view.add("Settings")
-tab_view.add("Account")
+master_tabs = CTkTabview(master=app, width=750, height=900)
+master_tabs.pack(padx=20, pady=75, expand=False)
+AddTab(master_tabs, "Games")
+AddTab(master_tabs, "Settings")
+AddTab(master_tabs, "Account")
 
+games_tabs = CTkTabview(master=master_tabs.tab("Games"), width=750, height=800)
+games_tabs.pack(expand=False)
+AddTab(games_tabs, "Hell Hotel")
+AddTab(games_tabs, "Ragdoll Destroyers")
 
-btn = CTkButton(master=tab_view.tab("Games"), text="Click Me")
-btn.place(relx=0.5, rely=0.5, anchor="center")
+hh_image = CTkLabel(games_tabs.tab("Hell Hotel"), image=CTkImage(dark_image=hh_logo, light_image=hh_logo, size=(250, 250)), text="").place(relx=0, rely=0)
+hh_image = CTkLabel(games_tabs.tab("Ragdoll Destroyers"), image=CTkImage(dark_image=rd_logo, light_image=rd_logo, size=(250, 250)), text="").place(relx=0, rely=0)
 
-news_frame = CTkScrollableFrame(master=tab_view.tab("News"), width=700, height=900)
-news_frame.pack(expand=False)
-
-
-def GenerateNews(set_title):
-    new_news = CTkFrame(master=news_frame, width=350, border_color="#242424", border_width=10)
-    new_news.pack(expand=False)
-
-
-GenerateNews("test1")
-GenerateNews("test2")
-GenerateNews("test3")
-
+btn_discord = CTkButton(master=master_tabs.tab("Settings"), text="Join Discord", image=CTkImage(dark_image=d_logo, light_image=d_logo, size=(31, 24)), fg_color="transparent", border_color="#7289da", text_color="#7289da", bg_color="#000000", border_width=3, corner_radius=20, font=(CTkFont, 15)).place(relx=0.025, rely=0)
+btn_github = CTkButton(master=master_tabs.tab("Settings"), text="GitHub", image=CTkImage(dark_image=gh_logo, light_image=gh_logo, size=(24, 24)), fg_color="#aaaaaa", text_color="#000000", border_color="#000000", border_width=3, corner_radius=20, font=(CTkFont, 15)).place(relx=0.025, rely=0.075)
 
 app.mainloop()
