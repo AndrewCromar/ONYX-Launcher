@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -67,6 +68,21 @@ namespace ONYX_Launcher
             int centerY = (screenHeight - this.Height) / 2;
 
             this.Location = new Point(centerX, centerY);
+        }
+
+        private void btn_updates_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/AndrewCromar/ONYX-Launcher/releases");
+        }
+
+        private void btn_github_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/AndrewCromar/ONYX-Launcher");
+        }
+
+        private void btn_discord_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://discord.com/invite/2maTr7RQQQ");
         }
     }
 }

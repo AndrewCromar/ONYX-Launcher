@@ -45,11 +45,16 @@
             this.btn_launch_hh = new System.Windows.Forms.Button();
             this.pb_hh_logo = new System.Windows.Forms.PictureBox();
             this.pnl_news = new System.Windows.Forms.Panel();
-            this.lbl_news_title = new System.Windows.Forms.Label();
             this.pnl_news_line = new System.Windows.Forms.Panel();
+            this.lbl_news_title = new System.Windows.Forms.Label();
             this.pnl_settings = new System.Windows.Forms.Panel();
+            this.btn_discord = new System.Windows.Forms.Button();
+            this.btn_github = new System.Windows.Forms.Button();
+            this.btn_updates = new System.Windows.Forms.Button();
             this.pnl_settings_line = new System.Windows.Forms.Panel();
             this.lbl_settings_title = new System.Windows.Forms.Label();
+            this.pb_discord = new System.Windows.Forms.PictureBox();
+            this.pb_github = new System.Windows.Forms.PictureBox();
             this.pnl_blue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_games.SuspendLayout();
@@ -59,6 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_hh_logo)).BeginInit();
             this.pnl_news.SuspendLayout();
             this.pnl_settings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_discord)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_github)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_blue
@@ -256,6 +263,14 @@
             this.pnl_news.Size = new System.Drawing.Size(960, 480);
             this.pnl_news.TabIndex = 4;
             // 
+            // pnl_news_line
+            // 
+            this.pnl_news_line.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.pnl_news_line.Location = new System.Drawing.Point(10, 48);
+            this.pnl_news_line.Name = "pnl_news_line";
+            this.pnl_news_line.Size = new System.Drawing.Size(940, 10);
+            this.pnl_news_line.TabIndex = 5;
+            // 
             // lbl_news_title
             // 
             this.lbl_news_title.AutoSize = true;
@@ -266,23 +281,56 @@
             this.lbl_news_title.TabIndex = 0;
             this.lbl_news_title.Text = "NEWS";
             // 
-            // pnl_news_line
-            // 
-            this.pnl_news_line.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
-            this.pnl_news_line.Location = new System.Drawing.Point(10, 48);
-            this.pnl_news_line.Name = "pnl_news_line";
-            this.pnl_news_line.Size = new System.Drawing.Size(940, 10);
-            this.pnl_news_line.TabIndex = 5;
-            // 
             // pnl_settings
             // 
             this.pnl_settings.BackColor = System.Drawing.Color.Gray;
+            this.pnl_settings.Controls.Add(this.pb_github);
+            this.pnl_settings.Controls.Add(this.pb_discord);
+            this.pnl_settings.Controls.Add(this.btn_discord);
+            this.pnl_settings.Controls.Add(this.btn_github);
+            this.pnl_settings.Controls.Add(this.btn_updates);
             this.pnl_settings.Controls.Add(this.pnl_settings_line);
             this.pnl_settings.Controls.Add(this.lbl_settings_title);
             this.pnl_settings.Location = new System.Drawing.Point(966, 60);
             this.pnl_settings.Name = "pnl_settings";
             this.pnl_settings.Size = new System.Drawing.Size(960, 480);
             this.pnl_settings.TabIndex = 6;
+            // 
+            // btn_discord
+            // 
+            this.btn_discord.FlatAppearance.BorderSize = 2;
+            this.btn_discord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_discord.Location = new System.Drawing.Point(41, 126);
+            this.btn_discord.Name = "btn_discord";
+            this.btn_discord.Size = new System.Drawing.Size(75, 25);
+            this.btn_discord.TabIndex = 8;
+            this.btn_discord.Text = "Discord";
+            this.btn_discord.UseVisualStyleBackColor = true;
+            this.btn_discord.Click += new System.EventHandler(this.btn_discord_Click);
+            // 
+            // btn_github
+            // 
+            this.btn_github.FlatAppearance.BorderSize = 2;
+            this.btn_github.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_github.Location = new System.Drawing.Point(41, 95);
+            this.btn_github.Name = "btn_github";
+            this.btn_github.Size = new System.Drawing.Size(75, 25);
+            this.btn_github.TabIndex = 7;
+            this.btn_github.Text = "GitHub";
+            this.btn_github.UseVisualStyleBackColor = true;
+            this.btn_github.Click += new System.EventHandler(this.btn_github_Click);
+            // 
+            // btn_updates
+            // 
+            this.btn_updates.FlatAppearance.BorderSize = 2;
+            this.btn_updates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_updates.Location = new System.Drawing.Point(10, 64);
+            this.btn_updates.Name = "btn_updates";
+            this.btn_updates.Size = new System.Drawing.Size(106, 25);
+            this.btn_updates.TabIndex = 6;
+            this.btn_updates.Text = "Updates";
+            this.btn_updates.UseVisualStyleBackColor = true;
+            this.btn_updates.Click += new System.EventHandler(this.btn_updates_Click);
             // 
             // pnl_settings_line
             // 
@@ -301,6 +349,26 @@
             this.lbl_settings_title.Size = new System.Drawing.Size(159, 31);
             this.lbl_settings_title.TabIndex = 0;
             this.lbl_settings_title.Text = "SETTINGS";
+            // 
+            // pb_discord
+            // 
+            this.pb_discord.Image = global::ONYX_Launcher.Properties.Resources.discord_logo;
+            this.pb_discord.Location = new System.Drawing.Point(10, 126);
+            this.pb_discord.Name = "pb_discord";
+            this.pb_discord.Size = new System.Drawing.Size(25, 25);
+            this.pb_discord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_discord.TabIndex = 6;
+            this.pb_discord.TabStop = false;
+            // 
+            // pb_github
+            // 
+            this.pb_github.Image = global::ONYX_Launcher.Properties.Resources.github_logo;
+            this.pb_github.Location = new System.Drawing.Point(10, 95);
+            this.pb_github.Name = "pb_github";
+            this.pb_github.Size = new System.Drawing.Size(25, 25);
+            this.pb_github.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_github.TabIndex = 9;
+            this.pb_github.TabStop = false;
             // 
             // Main
             // 
@@ -330,6 +398,8 @@
             this.pnl_news.PerformLayout();
             this.pnl_settings.ResumeLayout(false);
             this.pnl_settings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_discord)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_github)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,5 +426,10 @@
         private System.Windows.Forms.Panel pnl_settings;
         private System.Windows.Forms.Panel pnl_settings_line;
         private System.Windows.Forms.Label lbl_settings_title;
+        private System.Windows.Forms.Button btn_updates;
+        private System.Windows.Forms.Button btn_discord;
+        private System.Windows.Forms.Button btn_github;
+        private System.Windows.Forms.PictureBox pb_github;
+        private System.Windows.Forms.PictureBox pb_discord;
     }
 }
