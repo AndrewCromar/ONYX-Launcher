@@ -1,0 +1,11 @@
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\bin\Debug\ONYX Launcher.exe.config
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\bin\Debug\ONYX Launcher.exe
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\bin\Debug\ONYX Launcher.pdb
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.csproj.AssemblyReference.cache
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.csproj.SuggestedBindingRedirects.cache
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX_Launcher.Properties.Resources.resources
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX_Launcher.Startup.resources
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.csproj.GenerateResource.cache
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.csproj.CoreCompileInputs.cache
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.exe
+X:\Creative Projects\andrew-coding\GitHub\ONYX-Launcher\ONYX Launcher\ONYX Launcher\obj\Debug\ONYX Launcher.pdb
