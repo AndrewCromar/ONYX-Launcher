@@ -1,5 +1,6 @@
 # ONYX Launcher
- Launcher for ONYX Development games.
+ Launcher for ONYX Development applications (games and tools).
 
-[Good video for the python stuff.](https://www.youtube.com/watch?v=Miydkti_QVE)
-[CTK Docs](https://customtkinter.tomschimansky.com/)
+### Releases
+* [latest (v0.1.2-pre)](https://github.com/AndrewCromar/ONYX-Launcher/releases/tag/v0.1.2-pre)
+* [all releases](https://github.com/AndrewCromar/ONYX-Launcher/releases)
