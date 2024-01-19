@@ -1,9 +1,12 @@
 from customtkinter import *
 from PIL import Image
+import webbrowser
 
 print("launching launcher")
 
 def AddTab(form, title): form.add(title)
+def Discord(): webbrowser.open("https://discord.com/invite/2maTr7RQQQ", new=0, autoraise=True)
+def Github(): webbrowser.open("https://github.com/AndrewCromar/ONYX-Launcher", new=0, autoraise=True)
 
 app = CTk()
 app.geometry("1000x800")
@@ -25,7 +28,7 @@ AddTab(master_tabs, "Settings")
 AddTab(master_tabs, "Account")
 AddTab(master_tabs, "Downloads")
 
-games_tabs = CTkTabview(master=master_tabs.tab("Games"), width=750, height=800)
+games_tabs = CTkTabview(master=master_tabs.tab("Games"), width=730, height=800)
 games_tabs.pack(expand=False)
 AddTab(games_tabs, "Hell Hotel")
 AddTab(games_tabs, "Ragdoll Destroyers")
@@ -33,7 +36,7 @@ AddTab(games_tabs, "Ragdoll Destroyers")
 hh_image = CTkLabel(games_tabs.tab("Hell Hotel"), image=CTkImage(dark_image=hh_logo, light_image=hh_logo, size=(250, 250)), text="").place(relx=0, rely=0)
 hh_image = CTkLabel(games_tabs.tab("Ragdoll Destroyers"), image=CTkImage(dark_image=rd_logo, light_image=rd_logo, size=(250, 250)), text="").place(relx=0, rely=0)
 
-btn_discord = CTkButton(master=master_tabs.tab("Settings"), text="Join Discord", image=CTkImage(dark_image=d_logo, light_image=d_logo, size=(31, 24)), fg_color="#000000", border_color="#7289da", text_color="#7289da", border_width=3, corner_radius=20, font=(CTkFont, 15)).place(relx=0.025, rely=0)
-btn_github = CTkButton(master=master_tabs.tab("Settings"), text="GitHub", image=CTkImage(dark_image=gh_logo, light_image=gh_logo, size=(24, 24)), fg_color="#aaaaaa", text_color="#000000", border_color="#000000", border_width=4, corner_radius=20, font=(CTkFont, 15)).place(relx=0.025, rely=0.075)
+btn_discord = CTkButton(master=master_tabs.tab("Settings"), command=Discord, text="Join Discord", image=CTkImage(dark_image=d_logo, light_image=d_logo, size=(31, 24)), fg_color="#000000", border_color="#7289da", text_color="#7289da", border_width=3, corner_radius=20, font=(CTkFont, 15)).place(relx=0.025, rely=0)
+btn_github = CTkButton(master=master_tabs.tab("Settings"), command=Github, text="GitHub", image=CTkImage(dark_image=gh_logo, light_image=gh_logo, size=(24, 24)), fg_color="#aaaaaa", text_color="#000000", border_color="#000000", border_width=4, corner_radius=20, font=(CTkFont, 15)).place(relx=0.025, rely=0.075)
 
 app.mainloop()
